@@ -17,8 +17,14 @@
              {"name":"tomato","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/006/605/original/data?1649242645","price":120 ,"id":1,"qty":4},
 
              {"name":"potato","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BPOT11.png","price":29 ,"id":3,"qty":1}
-         ]
-
+         ],
+     
+         "user":[
+             {"first_name":"swati",
+                  "last_name":"bersurda",
+                  "email":"swatibersurda@gmail.com",
+                  "mobileno":12345
+            }]
 
     
 

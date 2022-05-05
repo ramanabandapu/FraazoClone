@@ -1,0 +1,15 @@
+.mobileview{
+    display:flex;
+    gap:150px;
+    margin:50px
+}
+.mobileview img{
+    width:500px;
+    border: 1px solid;
+}
+.mobileview div{
+    border: 1px solid ;
+    width:500px;
+    height:500px;
+
+}

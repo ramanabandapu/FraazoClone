@@ -1,0 +1,57 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom"
+import "./allcss.css";
+import { addCartproduct } from "../Redux/action";
+import { useDispatch } from "react-redux";
+
+
+export const FruitDetail=()=>{
+    const [fruitdetail,setFruitDetail]=useState({})
+    const dispatch=useDispatch();
+
+    const {id}=useParams();
+
+    useEffect(()=>{
+     
+        axios.get(`http://localhost:8080/fruits/${id}`).then((res)=>{
+            console.log(res.data)
+            setFruitDetail(res.data)
+        })
+
+
+
+    },[])
+
+    const handle=()=>{
+      
+       
+            dispatch(addCartproduct(fruitdetail))
+    
+            
+          
+    
+       }
+
+
+    return (
+       
+        <div>
+          {id}
+
+          <div className="fruitdetaildiv">
+              <div className="leftfruitdiv">
+              <img src={fruitdetail.img}></img>
+              </div>
+              <div className="rightfruitdiv">
+              <h3>{fruitdetail.name}</h3>
+              <p>Price:{fruitdetail.price}</p>
+              <button onClick={handle}> AddTocart</button>
+              </div>
+              
+
+          </div>
+
+        </div>
+    )
+}

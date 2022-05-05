@@ -1,0 +1,29 @@
+.fruitdetaildiv{
+    width: 60%;
+    margin: auto;
+  
+   
+}
+.fruitdetaildiv{
+
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.rightfruitdiv
+{
+    height: fit-content;
+    width:40%;
+   text-align: center;
+  
+}
+.leftfruitdiv
+{
+    width:40%;
+}
+a
+{
+  text-decoration: none;
+}

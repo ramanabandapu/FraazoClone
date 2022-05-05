@@ -9,6 +9,7 @@ import { FruitDetail } from './Components/FruitDetail'
 import {VegitableDetail} from "./Components/VegitableDetail"
 import { Navbar } from './Components/NavBar'
 import { CartPage } from './Components/CartPage'
+import { Login } from './Components/Login'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/veg" element={<Vegitable/>}></Route>
         <Route path="/veg/:id" element={<VegitableDetail/>}></Route>
         <Route path="/cartpage" element={<CartPage/>}></Route>
+        <Route path="/login" element={<Login/>}></Route>
 
       </Routes>
      

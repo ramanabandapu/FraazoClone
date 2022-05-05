@@ -46,7 +46,7 @@ export const FruitDetail=()=>{
               <div className="rightfruitdiv">
               <h3>{fruitdetail.name}</h3>
               <p>Price:{fruitdetail.price}</p>
-              <button onClick={handle}> AddTocart</button>
+              <button onClick={handle}> Add to cart</button>
               </div>
               
 

@@ -58,7 +58,7 @@ export const CartPage = () => {
 
 <div> Total:{price}</div>
 
-<button>Chekout</button>
+<button>Checkout</button>
     </div>
      
   );

@@ -34,6 +34,7 @@ export const CartPage = () => {
     <div>
       {cartt.map((ele) => (
         <div className="cartpage">
+          <div className="cartcards">
           <div className="cartleftchild">
             <img className="carpageimage" src={ele.img} />
           </div>
@@ -52,7 +53,7 @@ export const CartPage = () => {
           
             
           </div>
-          
+          </div>
         </div>
       ))}
 

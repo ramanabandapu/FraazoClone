@@ -58,7 +58,7 @@ button:hover{
  
     display: flex;
     justify-content: space-evenly;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
   }
 
 
@@ -82,16 +82,42 @@ button:hover{
     text-decoration: none;
   }
 
+/* **************************************************************************************************************** */
+
+  .cartpage{
+   
+   width: 50%;
+   margin: auto;
+display: flex;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+margin-bottom: 10px;
+  } 
+
+
+
+.cartcards{
+  width: fit-content;
+
+
+}
+
+.cartcards{
+  display: flex;
+  
+}
+
+
 .cartleftchild{
-  border: 1px solid red
+
+  text-align: center;
+  margin-right: 15%;
+ 
 }
 
 
 .cartrightchild{
-
-
-
-  border: 1px solid black;
+  margin-top: 5%;
+text-align: center;
 }
 
 

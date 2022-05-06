@@ -10,6 +10,7 @@ import {VegitableDetail} from "./Components/VegitableDetail"
 import { Navbar } from './Components/NavBar'
 import { CartPage } from './Components/CartPage'
 import { Login } from './Components/Login'
+import {Footer} from './Components/Footer'
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/login" element={<Login/>}></Route>
 
       </Routes>
+      <Footer/>
      
     </div>
   )

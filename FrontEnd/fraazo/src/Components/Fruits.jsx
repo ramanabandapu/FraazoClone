@@ -60,7 +60,8 @@ export const Fruits = () => {
           <div className="actuallfruites" key={ele.id}>
             <Link to={`/fruits/${ele.id}`}>
               <img src={ele.img}></img>
-              <p>rs:{ele.price}</p>
+              <h6>{ele.name}</h6>
+              <p>Rs: {ele.price}/-</p>
             </Link>
           </div>
         ))}

@@ -1,7 +1,13 @@
 import React from 'react'
 import "./Thankyou.css"
+import { Link,Navigate } from 'react-router-dom'
 
 export const Thankyou = () => {
+
+  //  const handle=()=>{
+  //    Navigate("/")
+  //  }
+
   return (
     <div className="card">
       <div className="checkmarkdiv" >
@@ -9,7 +15,14 @@ export const Thankyou = () => {
       </div>
         <h1>Success</h1> 
         <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
-        <div id="homepage"><a href="#" >Back to Home</a></div>
+        {/* <Link to={"/home"}> */}
+      
+      <button className="homepage" onClick={handle}>Back to Home</button>
+      
+
+        {/* <div id="homepage">Back to Home</div> */}
+        {/* </Link> */}
+         {/* Navigate(/home); */}
       </div>
   )
 }

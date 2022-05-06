@@ -16,7 +16,7 @@ export const VegitableDetail=()=>{
 
     useEffect(()=>{
      
-        axios.get(`http://localhost:8080/veg/${id}`).then((res)=>{
+        axios.get(`https://radiant-savannah-89782.herokuapp.com/veg/${id}`).then((res)=>{
             console.log(res.data)
             setvegDetail(res.data)
         })
@@ -46,8 +46,8 @@ export const VegitableDetail=()=>{
               </div>
               <div className="rightfruitdiv">
               <h3>{vegdetail.name}</h3>
-              <p>Price:{vegdetail.price}</p>
-              <button onClick={handle}>AddTocart</button>
+              <p>Price: Rs {vegdetail.price}/-</p>
+              <button onClick={handle}> AddTocart</button>
               </div>
               
 

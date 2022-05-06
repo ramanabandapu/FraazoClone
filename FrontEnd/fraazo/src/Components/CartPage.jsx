@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { removeCart } from "../Redux/action";
-import { Home } from "./Home";
+
+// import { Home } from "./Home";
+
 export const CartPage = () => {
   const [price, setPrice] = useState();
 
@@ -31,7 +33,9 @@ export const CartPage = () => {
   }, [total]);
 
   return (
-    <div>
+  <div className="whole">
+
+    <div className="cartContainer">
       {cartt.map((ele) => (
         <div className="cartpage">
           <div className="cartcards">
@@ -42,14 +46,14 @@ export const CartPage = () => {
           <div className="cartrightchild">
             <h5>{ele.title}</h5>
             <p>{ele.category}</p>
-            <h6>Price:{ele.price}</h6>
-            <h6>Quantity:{ele.qty}</h6>
+            <h6>Price: Rs {ele.price}/-</h6>
+            <h6>Quantity: {ele.qty}</h6>
             <button
               onClick={() => {
                 del(ele.id);
               }}
             >
-              Remove From the cart
+              Remove from cart
             </button>
           
             
@@ -57,11 +61,17 @@ export const CartPage = () => {
           </div>
         </div>
       ))}
-
-<div> Total:{price}</div>
-
-<button>Checkout</button>
-    </div>
      
+     
+     </div>
+
+<div className="checkout">
+   <h3> Total: Rs {price}/-</h3>
+<br />
+<Link to={"/checkout"}>
+<button className="checkoutbtn">Checkout</button>
+</Link>
+</div>
+</div>
   );
 };

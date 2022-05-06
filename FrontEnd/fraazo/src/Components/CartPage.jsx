@@ -31,35 +31,42 @@ export const CartPage = () => {
   }, [total]);
 
   return (
-    <div>
+  <div className="whole">
+
+    <div className="cartContainer">
       {cartt.map((ele) => (
         <div className="cartpage">
+          <div className="cartcards">
           <div className="cartleftchild">
             <img className="carpageimage" src={ele.img} />
           </div>
           <div className="cartrightchild">
             <h5>{ele.title}</h5>
             <p>{ele.category}</p>
-            <h6>Price:{ele.price}</h6>
-            <h6>Quantity:{ele.qty}</h6>
+            <h6>Price: Rs {ele.price}/-</h6>
+            <h6>Quantity: {ele.qty}</h6>
             <button
               onClick={() => {
                 del(ele.id);
               }}
             >
-              Remove From the cart
+              Remove from cart
             </button>
           
             
           </div>
-          
+          </div>
         </div>
       ))}
-
-<div> Total:{price}</div>
-
-<button>Checkout</button>
-    </div>
      
+     
+     </div>
+
+<div className="checkout">
+   <h3> Total: Rs {price}/-</h3>
+<br />
+<button className="checkoutbtn">Checkout</button>
+</div>
+</div>
   );
 };

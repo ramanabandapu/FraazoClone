@@ -49,7 +49,7 @@ export const VegitableDetail=()=>{
               </div>
               <div className="rightfruitdiv">
               <h3>{vegdetail.name}</h3>
-              <p>Price:{vegdetail.price}</p>
+              <p>Price: Rs {vegdetail.price}/-</p>
               <button onClick={handle}> AddTocart</button>
               </div>
               

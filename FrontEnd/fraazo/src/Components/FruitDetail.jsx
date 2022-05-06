@@ -45,7 +45,7 @@ export const FruitDetail=()=>{
               </div>
               <div className="rightfruitdiv">
               <h3>{fruitdetail.name}</h3>
-              <p>Price:{fruitdetail.price}</p>
+              <p>Price: Rs {fruitdetail.price}/-</p>
               <button onClick={handle}> Add to cart</button>
               </div>
               

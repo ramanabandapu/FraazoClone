@@ -56,8 +56,8 @@ export const Vegitable=()=>{
                <Link to={`/veg/${ele.id}`}>
               
               <img src={ele.img}></img>
-              <h6>{ele.name}</h6>
-               <p>rs:{ele.price}</p>
+              <h6 className="nostyle">{ele.name}</h6>
+               <p>Rs: {ele.price}/-</p>
                </Link>
 
            </div>
@@ -66,6 +66,7 @@ export const Vegitable=()=>{
     
        )}
       </div>
+
 
         
         </div>

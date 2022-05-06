@@ -2,11 +2,13 @@ import { React, useState } from 'react'
 import axios from "axios"
 import "./Login.css"
 import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export const Login = ({ setLoginuser }) => {
   const navigate = useNavigate()
+  const [data, setdata] = useState([]);
   const [user, setUser] = useState({
-   mobileno:""
+   mobile_no:""
   })
   const [getid,setGetid]=useState()
 
@@ -14,26 +16,25 @@ export const Login = ({ setLoginuser }) => {
     const { name, value } = e.target
     setUser({ ...user, [name]: value })
     // console.log(value)
+
   }
 
-  const login = async () => {
-    
 
-    axios.post(" http://localhost:8080/user", user)
+const login = ()=>{
+  
+
+}
+
+
+useEffect(()=>{
+  GetData();
+},[]);
+
+  const GetData = async () => {
+    axios.get(`https://fraazodev.herokuapp.com/login/${user}`)
       .then(res => {
-       console.log(res.data);
-        alert(res.data.message)
-        // setLoginuser(res.data.user)
-        let msg = res.data.message
-        console.log(res.data.user)
-        console.log(msg)
-        if (msg === "Login Successfull") {
-
-          navigate("/product")
-        }
-        else {
-          navigate("/login")
-        }
+      //  console.log(res.data);
+       console.log(res);
       }
       )
 

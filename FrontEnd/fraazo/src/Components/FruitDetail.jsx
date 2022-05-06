@@ -37,7 +37,7 @@ export const FruitDetail=()=>{
     return (
        
         <div>
-          {id}
+        
 
           <div className="fruitdetaildiv">
               <div className="leftfruitdiv">

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 export const Fruits = () => {
   const dispatch = useDispatch();
   const [fr, setfr] = useState([]);
+  console.log(fr,"frrrrr");
   const fruitarr = useSelector((store) => store.fruiteArr);
   console.log(fruitarr, "fruitarrrpage");
 
@@ -59,7 +60,10 @@ export const Fruits = () => {
         {fr.map((ele) => (
           <div className="actuallfruites" key={ele.id}>
             <Link to={`/fruits/${ele.id}`}>
+              {/* <p>{ele.id}</p> */}
+             
               <img src={ele.img}></img>
+              <p>{ele.name}</p>
               <p>rs:{ele.price}</p>
             </Link>
           </div>

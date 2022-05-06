@@ -24,7 +24,7 @@ function App() {
         <Route path="/veg" element={<Vegitable/>}></Route>
         <Route path="/veg/:id" element={<VegitableDetail/>}></Route>
         <Route path="/cartpage" element={<CartPage/>}></Route>
-        <Route path="/login" element={<Login/>}></Route>
+        {/* <Route path="/login" element={<Login/>}></Route> */}
 
       </Routes>
      

@@ -10,6 +10,7 @@ export const Vegitable=()=>{
 
     const dispatch=useDispatch();
     const [veg,setveg]=useState([]);
+    console.log(veg);
     const vegarr=useSelector((store )=> store.vegArr);
     console.log(vegarr,"vegpage");
    
@@ -20,7 +21,7 @@ export const Vegitable=()=>{
         
        
     
-        const datatoset=vegarr.filter((ele)=>ele.name===e.target.value)
+      const datatoset=vegarr.filter((ele)=>ele.name===e.target.value)
         console.log(datatoset)
         setveg(datatoset)
     }
@@ -28,7 +29,7 @@ export const Vegitable=()=>{
 
 
    useEffect(()=>{
-       axios.get("http://localhost:8080/veg").then((res)=>{
+       axios.get(" http://localhost:8080/veg").then((res)=>{
            setveg(res.data)
            console.log(res.data)
            dispatch(addVeg(res.data))
@@ -55,8 +56,9 @@ export const Vegitable=()=>{
            <div className="actuallfruites"  key={ele.id}>
                <Link to={`/veg/${ele.id}`}>
               
-              <img src={ele.img}></img>
-              <h6>{ele.name}</h6>
+              <img src={ele.img}/>
+
+              <h2> {ele.name} </h2>
                <p>rs:{ele.price}</p>
                </Link>
 

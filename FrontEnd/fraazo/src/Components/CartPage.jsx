@@ -37,6 +37,7 @@ export const CartPage = () => {
           <div className="cartcards">
           <div className="cartleftchild">
             <img className="carpageimage" src={ele.img} />
+          
           </div>
           <div className="cartrightchild">
             <h5>{ele.title}</h5>

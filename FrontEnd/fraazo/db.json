@@ -6,17 +6,22 @@
          {"name":"apple","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/241/original/data?1610967581" ,"price":149,"id":2,"qty":1},
          {"name":"woodapple","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/241/original/data?1610967581" ,"price":18,"id":3,"qty":1},
          {"name":"apple","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FAPP23.png" ,"price":243,"id":4,"qty":1},
-         {"name":"pomegrante","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/261/original/data?1612541635" ,"price":169},
-         {"name":"Banana","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN24.png" ,"price":169,"id":5,"qty":1},
-         {"name":"Banana","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN24.png" ,"price":119,"id":6,"qty":1}
+         {"name":"pomegrante","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/products/product_images/000/000/261/original/data?1612541635" ,
+            "price":169,"id":5,"qty":1},
+         {"name":"Banana","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN24.png" ,"price":169,"id":6,"qty":1},
+         {"name":"Banana","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/FBAN24.png" ,"price":119,"id":7,"qty":1}
 
          ],
 
          "veg":[
-             {"name":"onion","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BONI11.png","price":80 ,"id":5,"qty":1},
-             {"name":"tomato","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/006/605/original/data?1649242645","price":120 ,"id":1,"qty":4},
+             {"name":"onion","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BONI11.png","price":80 ,"id":44,"qty":1},
+             {"name":"tomato","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/006/605/original/data?1649242645","price":120 ,"id":45,"qty":1},
 
-             {"name":"potato","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BPOT11.png","price":29 ,"id":3,"qty":1}
+             {"name":"potato","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BPOT11.png","price":29 ,"id":46,"qty":1},
+             {"name":"onion","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BONI11.png","price":80 ,"id":47,"qty":1},
+             {"name":"tomato","img":"https://s3.ap-south-1.amazonaws.com/fraazo-prod/images/images/000/006/605/original/data?1649242645","price":120 ,"id":48,"qty":1},
+
+             {"name":"potato","img":"https://fraazo-master.s3.ap-south-1.amazonaws.com/products/BPOT11.png","price":29 ,"id":49,"qty":1}
          ],
      
          "user":[

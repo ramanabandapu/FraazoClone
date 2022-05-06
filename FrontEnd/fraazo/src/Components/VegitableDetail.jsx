@@ -31,17 +31,14 @@ export const VegitableDetail=()=>{
         
             dispatch(addCartproduct(vegdetail))
     
-            
-          
-    
-       }
+             }
 
 
 
     return (
        
         <div>
-          {id}
+          
 
           <div className="fruitdetaildiv">
               <div className="leftfruitdiv">
@@ -50,7 +47,7 @@ export const VegitableDetail=()=>{
               <div className="rightfruitdiv">
               <h3>{vegdetail.name}</h3>
               <p>Price:{vegdetail.price}</p>
-              <button onClick={handle}> AddTocart</button>
+              <button onClick={handle}>AddTocart</button>
               </div>
               
 

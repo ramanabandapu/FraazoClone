@@ -1,0 +1,24 @@
+.belownavbardiv{
+    display: flex;
+    border: 1px solid black;
+    height: 150px;
+}
+.leftdiv
+{
+    width:70%;
+    border: 1px solid green;
+
+    
+}
+.rightdiv
+{
+    width:25%;
+    border: 1px solid yellow;
+
+    
+}
+
+.belowdiv
+{
+    
+}

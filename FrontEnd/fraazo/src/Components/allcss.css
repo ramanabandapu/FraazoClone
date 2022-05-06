@@ -3,8 +3,10 @@
     display:flex;
 }
 .filterfruitdiv
-{
-    margin-top: 1%;
+{ 
+  
+  margin-right: 30px;
+    margin-top: 4%;
     width: 23%;
     height:150px;
     text-align: center;
@@ -25,6 +27,7 @@ button:hover{
 }
 .childdiv
 {
+  margin-top: 6%;
   width:90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -78,3 +81,19 @@ button:hover{
   {
     text-decoration: none;
   }
+
+.cartleftchild{
+  border: 1px solid red
+}
+
+
+.cartrightchild{
+
+
+
+  border: 1px solid black;
+}
+
+
+
+

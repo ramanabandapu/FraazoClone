@@ -31,7 +31,9 @@ export const CartPage = () => {
   }, [total]);
 
   return (
-    <div>
+  <div className="whole">
+
+    <div className="cartContainer">
       {cartt.map((ele) => (
         <div className="cartpage">
           <div className="cartcards">
@@ -48,7 +50,7 @@ export const CartPage = () => {
                 del(ele.id);
               }}
             >
-              Remove From the cart
+              Remove from cart
             </button>
           
             
@@ -56,11 +58,15 @@ export const CartPage = () => {
           </div>
         </div>
       ))}
-
-<div> Total:{price}</div>
-
-<button>Checkout</button>
-    </div>
      
+     
+     </div>
+
+<div className="checkout">
+   <h3> Total:Rs {price}/-</h3>
+<br />
+<button className="checkoutbtn">Checkout</button>
+</div>
+</div>
   );
 };

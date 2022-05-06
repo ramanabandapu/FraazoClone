@@ -1,0 +1,41 @@
+.containerdv
+{
+    display:flex;
+}
+.filterfruitdiv
+{
+    width: 23%;
+    height:150px;
+    text-align: center;
+}
+button{
+    border: transparent;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover{
+    background-color: #f9f9f9;
+}
+.childdiv
+{
+  width:90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 350px);
+  grid-gap: 10px;
+}
+.actuallfruites {
+    background-color: rgba(255, 255, 255, 0.8);
+   
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    margin: auto;
+  }
+  .actuallfruites:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }

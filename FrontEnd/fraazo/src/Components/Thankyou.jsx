@@ -1,12 +1,24 @@
 import React from 'react'
 import "./Thankyou.css"
-import { Link,Navigate } from 'react-router-dom'
+import {useNavigate } from 'react-router-dom'
+import { useDispatch,useSelector } from 'react-redux'
+
+
 
 export const Thankyou = () => {
 
-  //  const handle=()=>{
-  //    Navigate("/")
-  //  }
+ const dispatch=useDispatch();
+ const cart=useSelector((store)=> store.cart)
+ console.log(cart)
+
+   
+  const navigate=useNavigate();
+
+  const handler=()=>{
+    navigate("/");
+    cart.length=0;
+    
+  }
 
   return (
     <div className="card">
@@ -17,7 +29,7 @@ export const Thankyou = () => {
         <p>We received your purchase request;<br/> we'll be in touch shortly!</p>
         {/* <Link to={"/home"}> */}
       
-      <button className="homepage" onClick={handle}>Back to Home</button>
+      <button className="homepage" onClick={()=>{handler(navigate('/'))}}>Back to Home</button>
       
 
         {/* <div id="homepage">Back to Home</div> */}

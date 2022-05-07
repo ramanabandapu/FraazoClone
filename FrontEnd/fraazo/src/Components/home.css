@@ -1,24 +1,99 @@
+.container{
+    /* border: 1px solid red; */
+    margin: 30px 0 60px 0;
+}
+
 .belownavbardiv{
+    /* border: 1px solid blue; */
+    height: 400px;
+    width: 100%;
     display: flex;
-    border: 1px solid black;
-    height: 150px;
-}
-.leftdiv
-{
-    width:70%;
-    border: 1px solid green;
-
-    
-}
-.rightdiv
-{
-    width:25%;
-    border: 1px solid yellow;
-
-    
 }
 
-.belowdiv
-{
-    
+.leftdiv{
+    /* border: 1px solid green; */
+    height: 400px;
+}
+
+.leftdivimg{
+    height: 350px;
+    width: 95%;
+    margin-left: 30px;
+}
+
+.rightdiv{
+    /* border: 1px solid black; */
+    height: 400px;
+    width: 35%;
+    margin-left: 10px;
+}
+
+.rightdivimg{
+    height: 100px;
+    width: 388px;
+}
+
+.rightdivimg1{
+    height: 100px;
+    width: 388px;
+    margin-top: 25px;
+}
+
+.bestdeal{
+    border-bottom: 1px solid grey;
+    height: 60px;
+    width: 90%;
+    text-align: left;
+    margin: auto;
+}
+
+.bestdealheading{
+    color: rgb(38,38,64);
+    font-size: 30px;
+    margin-left: 30px;
+    font-family: Quicksand,sans-serif!important;
+}
+
+.bestdealdiv{
+    /* border: 1px solid red; */
+    height: 350px;
+    display: flex;
+    margin-left: 15px;
+}
+
+.bestdealdiv1{
+    /* border: 1px solid blue; */
+    height: 310px;
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.bestdealdiv1:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.bestdealdivimg{
+    height: 190px;
+    width: 190px;
+}
+
+.bestdealdiv1parg{
+    color:rgb(38,38,64); 
+    font-size: 14px;
+    font-family: Quicksand,sans-serif!important;
+}
+
+.fruitscat{
+    /* border: 1px solid black; */
+}
+
+.fruitscatimg{
+    /* border: 1px solid red; */
+    height: 250px;
+    width: 280px;
+    margin-left: 25px;
+    border-radius: 5px;
 }

@@ -46,7 +46,7 @@ const register= async(e)=>{
       <input type="number" name="Card_Number" value={user.Card_Number} onChange={handlechange} placeholder='Card Number'/>
       <input type="number" name="Cvv" value={user.Cvv} onChange={handlechange} placeholder='CVV'/>
       {/* <input type="text" name="reEnterPassword" value={user.reEnterPassword} onChange={handlechange} placeholder='Re-enter Password' /> */}
-      <Link to={"thankyou"}>
+      <Link to={"/thankyou"}>
       <button className='checkoutbutton' onClick={register}>Submit</button>
       </Link>
       

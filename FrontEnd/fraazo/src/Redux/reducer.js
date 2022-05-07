@@ -3,7 +3,8 @@ import { ADD_FRUITS, ADD_VEG,ADD_CARTPRODUCT,Remove_CART } from "./action";
 const initstate={
     fruiteArr:[],
     vegArr:[],
-    cart:[]
+    cart:[],
+    
 
 }
 export const reducer=(store=initstate,{type,payload})=>{
@@ -44,7 +45,7 @@ export const reducer=(store=initstate,{type,payload})=>{
                    return {...store,cart:data}
                   
                                      
-          
+                 
           
            
 

@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 export const Fruits = () => {
   const dispatch = useDispatch();
   const [fr, setfr] = useState([]);
+  console.log(fr,"frrrrr");
   const fruitarr = useSelector((store) => store.fruiteArr);
   console.log(fruitarr, "fruitarrrpage");
 
@@ -18,7 +19,7 @@ export const Fruits = () => {
   };
 
   useEffect(() => {
-    axios.get("http://localhost:8080/fruits").then((res) => {
+    axios.get("https://radiant-savannah-89782.herokuapp.com/fruits").then((res) => {
       setfr(res.data);
       console.log(res.data);
       dispatch(addFruits(res.data));
@@ -56,15 +57,16 @@ export const Fruits = () => {
         </button>
       </div>
       <div className="childdiv">
-        {fr.map((ele) => (
+        {fr.map((ele) => 
           <div className="actuallfruites" key={ele.id}>
-            <Link to={`/fruits/${ele.id}`}>
+            <Link to={`/fruits/${ele._id}`}>
+             
               <img src={ele.img}></img>
               <h6 className="nostyle">{ele.name}</h6>
               <p>Rs: {ele.price}/-</p>
             </Link>
           </div>
-        ))}
+        )}
       </div>
     </div>
   );

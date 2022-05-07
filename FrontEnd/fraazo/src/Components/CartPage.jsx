@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { removeCart } from "../Redux/action";
-import { Home } from "./Home";
+
+// import { Home } from "./Home";
+
 export const CartPage = () => {
   const [price, setPrice] = useState();
 
@@ -39,6 +41,7 @@ export const CartPage = () => {
           <div className="cartcards">
           <div className="cartleftchild">
             <img className="carpageimage" src={ele.img} />
+          
           </div>
           <div className="cartrightchild">
             <h5>{ele.title}</h5>
@@ -65,7 +68,9 @@ export const CartPage = () => {
 <div className="checkout">
    <h3> Total: Rs {price}/-</h3>
 <br />
+<Link to={"/checkout"}>
 <button className="checkoutbtn">Checkout</button>
+</Link>
 </div>
 </div>
   );

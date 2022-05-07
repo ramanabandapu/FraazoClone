@@ -14,7 +14,7 @@ export const FruitDetail=()=>{
 
     useEffect(()=>{
      
-        axios.get(`http://localhost:8080/fruits/${id}`).then((res)=>{
+        axios.get(`https://radiant-savannah-89782.herokuapp.com/fruits/${id}`).then((res)=>{
             console.log(res.data)
             setFruitDetail(res.data)
         })
@@ -37,7 +37,7 @@ export const FruitDetail=()=>{
     return (
        
         <div>
-          {id}
+        
 
           <div className="fruitdetaildiv">
               <div className="leftfruitdiv">

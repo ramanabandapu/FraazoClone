@@ -16,7 +16,7 @@ export const VegitableDetail=()=>{
 
     useEffect(()=>{
      
-        axios.get(`http://localhost:8080/veg/${id}`).then((res)=>{
+        axios.get(`https://radiant-savannah-89782.herokuapp.com/veg/${id}`).then((res)=>{
             console.log(res.data)
             setvegDetail(res.data)
         })
@@ -31,17 +31,14 @@ export const VegitableDetail=()=>{
         
             dispatch(addCartproduct(vegdetail))
     
-            
-          
-    
-       }
+             }
 
 
 
     return (
        
         <div>
-          {id}
+          
 
           <div className="fruitdetaildiv">
               <div className="leftfruitdiv">

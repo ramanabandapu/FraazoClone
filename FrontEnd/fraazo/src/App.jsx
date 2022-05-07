@@ -10,6 +10,10 @@ import {VegitableDetail} from "./Components/VegitableDetail"
 import { Navbar } from './Components/NavBar'
 import { CartPage } from './Components/CartPage'
 import { Login } from './Components/Login'
+import { Footer } from './Components/Footer'
+import {Checkout} from "./Components/Checkout"
+import {Thankyou} from "./Components/Thankyou"
+import { Register } from './Components/Register'
 
 
 function App() {
@@ -24,9 +28,15 @@ function App() {
         <Route path="/veg" element={<Vegitable/>}></Route>
         <Route path="/veg/:id" element={<VegitableDetail/>}></Route>
         <Route path="/cartpage" element={<CartPage/>}></Route>
-        <Route path="/login" element={<Login/>}></Route>
+        <Route path='/login' element={<Login/>}></Route>
+        <Route path='/register' element={<Register/>}></Route>
+        <Route path='/checkout' element={<Checkout/>}></Route>
+        <Route path='/thankyou' element={<Thankyou/>}></Route>
+
+        {/* <Route path="/login" element={<Login/>}></Route> */}
 
       </Routes>
+      <Footer/>
      
     </div>
   )

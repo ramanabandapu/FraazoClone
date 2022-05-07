@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
- This is Jasmitha's branch
+ This is Jasmitha's
     </div>
   )
 }
